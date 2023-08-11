@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(156, 25, 69);
+    color: #fff;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: black;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.services .service {
+    margin-bottom: 30px;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: rgb(156, 25, 69);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Style for the contact form */
+.form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="textarea"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form button {
+    background-color: #ca7aac;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #9b5491;
+}
+
+/* Style for the contact information section */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ca7aac;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+}
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+            <div class="service">
+                <h4>Counseling</h4>
+                <p>One-on-one counseling sessions with licensed therapists to address your specific needs.</p>
+            </div>
+            <div class="service">
+                <h4>Support Groups</h4>
+                <p>Join our supportive community through group therapy sessions and connect with others.</p>
+            </div>
+            <div class="service">
+                <h4>Online Resources</h4>
+                <p>Access a wealth of online resources, articles, and self-help tools to aid your mental health.</p>
+            </div>
+        </div>
+           <section class="about">
+        <div class="container">
+        value='<?php echo $name; ?>
+        value='<?php echo $password ?>
+        value="update"

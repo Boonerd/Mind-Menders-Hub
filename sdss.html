@@ -1,0 +1,64 @@
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var dob = document.getElementById("dob").value;
+            var message = document.getElementById("message").value;
+            var password = document.getElementById("password").value;
+
+            var errorMessages = [];
+
+            if (!/^[A-Za-z\s]+$/.test(name)) {
+                errorMessages.push("Name should contain alphabets only.");
+            }
+
+            if (message.length < 17) {
+                errorMessages.push("Message must be 17 characters or more.");
+            }
+
+            if (!/[A-Z]/.test(password) || !/\d/.test(password)) {
+                errorMessages.push("Password must contain at least one uppercase letter and one number.");
+            }
+
+            if (errorMessages.length > 0) {
+                displayErrors(errorMessages);
+                return false;
+            }
+
+            return true;
+        }
+
+        function showAndHideAlert(message, duration) {
+      var alertBox = document.createElement("div");
+      alertBox.style.position = "fixed";
+      alertBox.style.top = "50%";
+      alertBox.style.left = "50%";
+      alertBox.style.transform = "translate(-50%, -50%)";
+      alertBox.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+      alertBox.style.color = "#fff";
+      alertBox.style.padding = "10px 20px";
+      alertBox.style.borderRadius = "5px";
+      alertBox.style.zIndex = "9999";
+      alertBox.textContent = message;
+      document.body.appendChild(alertBox);
+
+      setTimeout(function () {
+        document.body.removeChild(alertBox);
+      }, duration);
+    }
+
+   
+        function calculateAge(dob) {
+    var dobDate = new Date(dob);
+    var currentDate = new Date();
+    var age = currentDate.getFullYear() - dobDate.getFullYear();
+    var monthDiff = currentDate.getMonth() - dobDate.getMonth();
+    if (
+        monthDiff < 0 ||
+        (monthDiff === 0 && currentDate.getDate() < dobDate.getDate())
+    ) {
+        age--;
+    }
+    return age;
+}
+    </script>
